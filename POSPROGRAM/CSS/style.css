@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* ----------------------공용 header--------------------------- */
+#header{
+	width: 100%;
+	height: 70px;
+	background: #3D5B77;
+	display: table;
+}
+
+.top > img {
+	float: left;
+	width: 156px;
+	height: 90px;
+}
+
+.topNav {
+	display: inline-block;
+	text-align: center;
+	width:90px;
+	height: 90px;
+	position: relative;
+	overflow: hidden;
+	background: #4B6C8B;
+  	border: 2px solid #3D5B77;
+  	float: right;
+}
+
+/* ----------------------body-------------------- */
+body {
+ 	margin:0px;
+	 background: #CADBEC;
+}
+
+/* ----------------------container-------------------- */
+.container {
+	 margin: 50px auto;
+	 padding: 5px 40px;
+}
+
+/* -----------chat--------------------- */
+.chat {
+	height:100px;
+	width: 100%;
+	
+}
+
+.chat > a > img{
+	style="text-decoration:none"
+
+	}
+.chat > a > img{
+	width:55px;
+	height: 55px;
+	float: right;
+}
+/* -----------box--------------------- */
+.box {
+	display: inline-block;
+	text-align: center;
+	width:176px;
+	height: 190px;
+	position: relative;
+	overflow: hidden;
+	background: #D3E1F5;
+  	margin: 0.2%;
+  	padding: 15px;
+  	border-radius: 14px;
+  	border: 2px solid #3D5B77;
+  	float: center;
+}
+
+.box > a > img {
+	align: center;
+	width: 115px;
+	height: 115px;
+}
+
+.box > h3 {
+	padding: 5px ;
+}
+
+/* -----------------------------------------------------------정보변경 -------------------------------------------------------------------------------------- */
+/* -----------정보변경 alter--------------------- */
+
+.alter> h1{
+	text-align: center;
+}
+
+.alter> img{
+	float: center;
+}
+/* -----------정보변경-contents--------------------- */
+
+.contents {
+	  text-align: center;
+	  overflow: hidden;
+	  width: 80%;
+	  margin: 0 auto;
+ 	  display: table;
+ 	  padding: 15px;
+	  background: #D3E1F5;
+	  height: 190px;
+  	  border-radius: 14px;
+  	  border: 2px solid #3D5B77;
+}
+
+.contents  th > h1 {
+	  font-weight: bold;
+	  font-size: 25px;
+ 	  text-align: center;
+      color: #185875;
+}
+
+.contents  td{
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  	  padding-left:2%;  
+      border: 2px solid #3D5B77;
+      font-weight: normal;
+	  font-size: 25px;
+	  border: 2px solid #3D5B77;
+}
+
+.contents  th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  	  padding-left:2%;  
+  	  border: 2px solid #3D5B77;
+}
+
+
+.contents  td > h1{
+	  font-weight: bold;
+	  font-size: 25px;
+      text-align: center;
+      color: #185875;
+}
+
+/* -----------------------------------------------------------매출현황-------------------------------------------------------------------------------------- */
+/* ------------------------카드/현금 결제 TAB--------------------------- */ 
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #333;
+	width: 100%;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	padding: 0px 21px;
+	height: 31px;
+	line-height: 31px;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #333;
+	background: #666;
+	color: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+
+.tab_last { border-right: 1px solid #333; }
+
+ul.tabs li:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+ul.tabs li.active {
+	background-color: #fff;
+	color: #333;
+	border-bottom: 1px solid #fff;
+	display: block;
+}
+
+.tab_container {
+	border: 1px solid #333;
+	border-top: none;
+	clear: both;
+	float: left;
+	width: 100%;
+	background: #fff;
+	overflow: auto;
+}
+
+.tab_content {
+	padding: 20px;
+	display: none;
+}
+
+.tab_drawer_heading { display: none; }
+
+/* ------------------------다운로드 버튼 --------------------------- */ 
+.sub-main{
+  width: 30%;
+  margin:22px;
+  float: left;
+}
+
+.button{
+    position: relative;
+    background:#4490E2 ;
+    border: none;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+      text-align: center;
+  	cursor: pointer;
+  	font-size:24px;
+  	margin: 0 0 0 100px;
+  	  	border-radius: 14px;
+}
+
