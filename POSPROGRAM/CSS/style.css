@@ -3,22 +3,22 @@
 /* ----------------------공용 header--------------------------- */
 #header{
 	width: 100%;
-	height: 70px;
+	height: 100px;
 	background: #3D5B77;
 	display: table;
 }
 
 .top > img {
 	float: left;
-	width: 156px;
-	height: 90px;
+	width: 166px;
+	height: 100px;
 }
 
 .topNav {
 	display: inline-block;
 	text-align: center;
-	width:90px;
-	height: 90px;
+	width:100px;
+	height: 100px;
 	position: relative;
 	overflow: hidden;
 	background: #4B6C8B;
@@ -26,10 +26,39 @@
   	float: right;
 }
 
+.topNav> img{
+	width: 40px;
+	height: 40px;	
+	text-align: center;
+	margin-top:25px;
+}
+.top > a
+{
+		text-decoration: none;
+		font-size: 20px;
+		font-family: "맑은고딕", "고딕", " sans-serif";
+		color: #ffffff;
+		cursor: pointer;
+}
+
+.topNav > h5{
+	margin-top: 35px;
+	text-align: center;
+}
+
+
+/* ----------------------<<<<  MENU >>>>-------------------- */
 /* ----------------------body-------------------- */
 body {
  	margin:0px;
 	 background: #CADBEC;
+	 height: 100%;
+}
+/* ----------------------html-------------------- */
+html
+{
+	width: 100%;
+	height: 100%;
 }
 
 /* ----------------------container-------------------- */
@@ -37,79 +66,137 @@ body {
 	 margin: 50px auto;
 	 padding: 5px 40px;
 }
-
+/* ----------------------visual-------------------- */
+.visual {
+	width:100%;
+	height: 30px;
+	background: #DBEBF6;
+	display: table;
+}
 /* -----------chat--------------------- */
 .chat {
-	height:100px;
+	height:250px;
 	width: 100%;
 	
 }
 
 .chat > a > img{
-	style="text-decoration:none"
-
-	}
-.chat > a > img{
-	width:55px;
-	height: 55px;
+	width:75px;
+	height: 75px;
 	float: right;
+	margin-right: 150px;
+	margin-top:60px;
 }
 /* -----------box--------------------- */
 .box {
 	display: inline-block;
 	text-align: center;
-	width:176px;
-	height: 190px;
+	width:200px;
+	height: 200px;
 	position: relative;
 	overflow: hidden;
-	background: #D3E1F5;
-  	margin: 0.2%;
+	background: linear-gradient( to bottom, #D3E1F5, #ffffff );
+  	margin: 1%;
   	padding: 15px;
   	border-radius: 14px;
-  	border: 2px solid #3D5B77;
+  	border: 4px solid #95B3D7;
   	float: center;
 }
 
-.box > a > img {
+.box > img {
+	padding-top: 15px;
 	align: center;
 	width: 115px;
 	height: 115px;
 }
-
-.box > h3 {
-	padding: 5px ;
+.allbox > a {
+		text-decoration: none;
+		color: #3D5B77;
+		font-family: "맑은고딕", "고딕", " sans-serif";
+		font-weight: bold;
+		font-size: 20px
 }
+.box > h3 {
+	padding: 5px ;			
+}
+
+.allbox {
+	width: 100%;
+	height: 400px;
+	text-align: center;
+}
+
+/* -------------footer-------------------- */
+.footer{
+	width: 100%;
+	height: 100px;
+	background: #3D5B77;
+	font-size: 12px;
+	
+	position:absolute;
+    bottom:0;
+}
+
+.footer > img{
+	float: right;
+	height: 100px;
+}
+
+.inf> h5 {
+	padding-top: 10px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 12px;
+}
+
 
 /* -----------------------------------------------------------정보변경 -------------------------------------------------------------------------------------- */
 /* -----------정보변경 alter--------------------- */
 
+.alter {
+	margin-left: 600px;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	width: 500px;
+	text-align: center;
+}
 .alter> h1{
 	text-align: center;
+	width: 200px;
+	align-content: center;
+	display: inline-block;
+	margin: 0px;
+	font-size: 50px;
+	color: #ffffff;
 }
 
 .alter> img{
-	float: center;
+	margin-right: 15px;	
 }
+
+
 /* -----------정보변경-contents--------------------- */
 
 .contents {
 	  text-align: center;
 	  overflow: hidden;
-	  width: 80%;
+	  width: 1100px;
+	  height: 500px;
 	  margin: 0 auto;
  	  display: table;
  	  padding: 15px;
 	  background: #D3E1F5;
-	  height: 190px;
   	  border-radius: 14px;
   	  border: 2px solid #3D5B77;
 }
 
 .contents  th > h1 {
 	  font-weight: bold;
-	  font-size: 25px;
+	  font-size: 20px;
  	  text-align: center;
       color: #185875;
+      width: 150px;
+      margin: 0px;
 }
 
 .contents  td{
@@ -120,6 +207,7 @@ body {
       font-weight: normal;
 	  font-size: 25px;
 	  border: 2px solid #3D5B77;
+	  width:30%;
 }
 
 .contents  th {
@@ -127,29 +215,33 @@ body {
 	  padding-top: 2%;
   	  padding-left:2%;  
   	  border: 2px solid #3D5B77;
+  	  width:30%;
 }
 
 
 .contents  td > h1{
 	  font-weight: bold;
-	  font-size: 25px;
+	  font-size: 20px;
       text-align: center;
       color: #185875;
+      width: 160px;
+      margin: 0px;
 }
 
 /* -----------------------------------------------------------매출현황-------------------------------------------------------------------------------------- */
+
 /* ------------------------카드/현금 결제 TAB--------------------------- */ 
-ul.tabs {
-	margin: 0;
-	padding: 0;
+/*------------------
+.tabs {
+	margin: 0px 100px;
+	padding: 0px;
 	float: left;
 	list-style: none;
 	height: 32px;
-	border-bottom: 1px solid #333;
 	width: 100%;
 }
 
-ul.tabs li {
+.tabs li {
 	float: left;
 	margin: 0;
 	cursor: pointer;
@@ -165,58 +257,164 @@ ul.tabs li {
 	position: relative;
 }
 
-.tab_last { border-right: 1px solid #333; }
-
-ul.tabs li:hover {
+.tabs li:hover {
 	background-color: #ccc;
 	color: #333;
 }
 
-ul.tabs li.active {
+.tabs li.active {
 	background-color: #fff;
 	color: #333;
 	border-bottom: 1px solid #fff;
 	display: block;
 }
 
-.tab_container {
-	border: 1px solid #333;
-	border-top: none;
-	clear: both;
-	float: left;
-	width: 100%;
-	background: #fff;
-	overflow: auto;
-}
 
-.tab_content {
-	padding: 20px;
-	display: none;
-}
+.tabs-content {
+  position: relative;
+  padding: 15px 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+}---------------------------------*/
 
-.tab_drawer_heading { display: none; }
+.tabs {
+  z-index: 15px;
+  position: relative;
+  background: #FFFFFF;
+  width: 1000px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 100px auto 10px;
+  overflow: hidden;
+    list-style: none;
+}
+.tabs-header {
+  position: relative;
+  background: #4285F4;
+  overflow: hidden;
+  list-style: none;
+}
+.tabs-header .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F4B142;
+  width: auto;
+  height: 2px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  list-style: none;
+}
+.tabs-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 68px);
+  list-style: none;
+}
+.tabs-header li {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  list-style: none;
+}
+.tabs-header a {
+  z-index: 1;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 20px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+}
+.tabs-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #4285F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tabs-nav:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-box-shadow: 0 0 20px 10px #4285F4;
+          box-shadow: 0 0 20px 10px #4285F4;
+}
+.tabs-nav i {
+  border-radius: 100%;
+  cursor: pointer;
+}
+.tabs-content {
+	width: 1000px;
+	height: 500px;
+  position: relative;
+  padding: 15px 20px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+.tabs-content:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  -webkit-box-shadow: 0 0 20px 10px #FFFFFF;
+          box-shadow: 0 0 20px 10px #FFFFFF;
+}
+.tabs-content .tab {
+  display: none;
+}
+.tabs-content .tab.active {
+  display: block;
+}
 
 /* ------------------------다운로드 버튼 --------------------------- */ 
-.sub-main{
-  width: 30%;
-  margin:22px;
-  float: left;
+.btn {
+	width: 120px;
+	background:#4490E2;
+	color: #ffffff;
+	text-align: center;  /* box 안쪽에 있는 내용을 정렬하는 방법*/
+	padding: 3px 8px;
+	border-radius: 4px;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: 50px;
+	margin-right:100px;
 }
 
-.button{
-    position: relative;
-    background:#4490E2 ;
-    border: none;
-    padding: 20px;
-    width: 100px;
-    text-align: center;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-      text-align: center;
-  	cursor: pointer;
-  	font-size:24px;
-  	margin: 0 0 0 100px;
-  	  	border-radius: 14px;
+.btn > img {
+	width:25px;
+	margin-right: 10px;
 }
-
