@@ -26,7 +26,7 @@ public interface MenuDao
 	 Menu getMenu(String price); 
   
 	 Menu getMenu(String menu_id); 
-	
+	  
 	 Menu getMenu(String id, String type_id, String price, String menu_id) ;
 	  
 }
