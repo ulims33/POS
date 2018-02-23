@@ -21,6 +21,12 @@ public class CustomerInformation {
       this.writerId = writerId;
       this.content = content;
       this.regDate = regDate;
+      
+      
+      
+      
+      
+      
       this.hit = hit;
    }
    public String getId() {
