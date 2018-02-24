@@ -1,13 +1,17 @@
 package posproject.jspweb.entity;
 
 public class Member {
-	
+	헷갈리네...
 	private String id;
 	private String name;
 	private int presentCoupon;
 	private String tel;
 	private String rankId;
 	private String memberId;
+	
+	
+	
+	
 	
 	
 	
