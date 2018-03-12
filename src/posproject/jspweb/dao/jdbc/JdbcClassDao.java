@@ -1,16 +1,14 @@
 package posproject.jspweb.dao.jdbc;
 
-
 import java.util.List;
 
-import posproject.jspweb.dao.MemberDao;
-import posproject.jspweb.entity.Member;
+import posproject.jspweb.dao.ClassDao;
+import posproject.jspweb.entity.Class;
 
-
-public class JdbcMemberDao implements MemberDao{
+public class JdbcClassDao implements ClassDao {
 
 	@Override
-	public int insert(Member member) {
+	public int insert(Class Class) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -22,19 +20,19 @@ public class JdbcMemberDao implements MemberDao{
 	}
 
 	@Override
-	public int update(Member member) {
+	public int update(Class Class) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public Member get(String id) {
+	public Class get(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Member> getList() {
+	public List<Class> getList() {
 		// TODO Auto-generated method stub
 		return null;
 	}
