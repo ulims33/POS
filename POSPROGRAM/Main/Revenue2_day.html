@@ -5,7 +5,8 @@
 		<meta charset="UTF-8">
 		<title>매출 현황_카드</title>
 		<link href= "../CSS/style.css"  type="text/css" rel="stylesheet" />
-		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script  src="../js/Revenue3.js"></script>	
 	</head>
 
 	<body>
@@ -43,9 +44,51 @@
 			<div class="visual">
 			</div>
 			
-			<a href='#' ><div class='button'><img src="../images/down.png"  />다운로드</div></a>
+			<button id="downloadbutton">
+					<img src="../images/down.png"  />   다운로드 
+				</button>
+			
+			
+			<!-- 모달창 -->
+			<div id="modal">
+			    <h3> 다운로드  </h3>
+			    <p> 데이터를 다운로드 하시겠습니까? </p>
+			    <button id="confirm_button">확인</button>
+			    <button id="close_button">취소</button>
+			</div>
 			
 			<div class="payment">
+			<!-- 달력 --->
+				<div id="date-picker-dates">
+			      <div id="date-picker-date-first" class="date-picker-date">
+			        24/12/2017
+			      </div>
+			      <div class="date-picker-date">
+			        28/12/2017
+			      </div>
+			    </div>
+			    
+			    <!-- 달력모달창 --->
+			    <div id="date-picker-modal" class="hidden-2">
+			      <div id="date-picker-top-bar">
+			        <div id="date-picker-previous-month" class="date-picker-change-month">&lsaquo;</div>
+			        <div id="date-picker-month">December 17</div>
+			        <div id="date-picker-next-month" class="date-picker-change-month">&rsaquo;</div>
+			      </div>
+			      <div id="date-picker-exit">&times;</div>
+			      <table id="date-picker">
+			        <tr id="date-picker-weekdays">
+			          <th>S</th>
+			          <th>M</th>
+			          <th>T</th>
+			          <th>W</th>
+			          <th>T</th>
+			          <th>F</th>
+			          <th>S</th>
+			        </tr>
+			      </table>
+			    </div>
+			    
 				<a href="Revenue2_day.html"><button class="btn btn3">일 </button></a>
 				<a href="Revenue2_month.html"><button class="btn btn7">월</button></a>
 				<a href="Revenue2_year.html"><button class="btn btn2">년</button></a>
