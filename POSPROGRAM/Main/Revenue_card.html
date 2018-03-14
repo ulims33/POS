@@ -5,9 +5,7 @@
 		<meta charset="UTF-8">
 		<title>매출 현황_카드</title>
 		<link href= "../CSS/style.css"  type="text/css" rel="stylesheet" />
-		<script src="../js/Revenue.js"></script>
-		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="jquery.battatech.excelexport.js"></script>
+		
 	</head>
 
 	<body>
@@ -45,18 +43,7 @@
 			<div class="visual">
 			</div>
 			
-			<button id="downloadbutton">
-					<img src="../images/down.png"  />   다운로드 
-				</button>
-			
-			
-			<!-- 모달창 -->
-			<div id="modal">
-			    <h3> 다운로드  </h3>
-			    <p> 데이터를 다운로드 하시겠습니까? </p>
-			    <button id="confirm_button">확인</button>
-			    <button id="close_button">취소</button>
-			</div>
+			<a href='#' ><div class='button'><img src="../images/down.png"  />다운로드</div></a>
 			
 			<div class="payment">
 				<a href="Revenue_card.html"><button class="btn btn3">카 드 </button></a>
@@ -64,7 +51,7 @@
 			</div>
 	<section>
 			  <div class="tbl-header">
-    <table id="card_table" cellpadding="0" cellspacing="0" border="0">
+    <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
           <th> 품 목 </th>
@@ -164,29 +151,6 @@
   </div>
   </section>
 		</main>
-		
-		<script type="text/javascript">
-			        $(document).ready(function () {
-			
-			            $("#confirm_button").click(function () {
-			
-			                var uri = $("#card_table").battatech_excelexport({
-			
-			                    containerid: "card_table", 
-			                    // 테이블 아이디
-			
-			                    datatype: 'table', 
-			                    // 데이터 타입 설정
-			
-			                    returnUri: true
-			                    // URI return 여부
-			                });
-			
-			                $(this).attr('download', 'sample.xls').attr('href', uri);
-			                // 파일이름, URI 설정
-			            });
-			        });			
-			</script>
 </body>
 	
 	<footer>		

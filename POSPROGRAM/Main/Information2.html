@@ -48,16 +48,13 @@
 		                정 보 변 경
 		    </div>
 			<div class="contact">
-				<form id="form1" method="post" enctype="multipart/form-data">
-					<div class="profile">
-						<input id="photo-file-button" type="file" name="file" class="hidden"/>
-						<img id="photo" src="../images/puppy.jpg"  />
-						<input class="btn-text btn-default" type="button" id="photo-button" value="이미지변경" />
-					</div>
-				</form>
+				<div class="profile">
+					<img src="../images/puppy.jpg"  />
+					<h3> 빔 밤  (Beam Balm)</h3>
+				</div>
 				
 		     	<form id="form">
-			      <legend>  Cafe 이 름 </legend>
+			      <legend>  Cafesoonee </legend>
 			      <fieldset>
 			        <label aria-hidden="true"></label>
 			        <input type="text" placeholder="비밀번호" id="pw"/>
@@ -80,50 +77,6 @@
 			    </form>
 		    </div>
 		</main>
-		
-		<script>
-		window.addEventListener("load",function()
-		{
-			 var photoButton = document.querySelector("#photo-button");
-	         var photoFileButton = document.querySelector("#photo-file-button");
-	         var photo = document.querySelector("#photo");	         
-
-	         photoButton.onclick = function(e)
-	         {
-	                var evt = new MouseEvent("click",
-	                {
-	                    view: window,
-	                    bubbles: true,
-	                    cancelable: true
-	                });
-	                
-	                photoFileButton.dispatchEvent(evt);
-	          };
-	            
-	            photoFileButton.onchange= function(e)
-	            {
-	                var file = photoFileButton.files[0];
-
-	                var info = "name:" +file.name;
-	                info += "size:" +file.size;
-	                info += "type:" +file.type;
-
-	                /*여기 다시 한번 더 확인하기*/
-	                var typeParts = file.files.split("/");
-	                
-	                if(typeParts[0] != "image")
-	                    alert("지원되는 이미지 파일의 형식이 아닙니다.");
-
-	                var reader = new FileReader();
-	                reader.onload = function(evt)
-	                {
-	                    photo.src = evt.target.result;
-	                };
-
-	                reader.readAsDataURL(file);
-	            };
-		});		
-		</script>
 	</body>
 	
 	<footer>

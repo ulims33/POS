@@ -217,65 +217,6 @@ a{
 	 
 }
 
-#modal1 {
-      display:none;
-      background-color:#fff;
-      position:fixed;
-      margin-top:300px;
-      margin-left:700px;
-      border:2px solid #E2E2E2;
-      border-radius: 10px;
-      z-Index: 1;
-      overflow: hidden;;
-      width:380px;
-      }
-      
-#modal1 > h3 {
-   color: #fff;
-   background-color: #3d5b77;
-   margin: 0px;
-   height:40px;
-   font-weight: bold;
-   font-family: "맑은 고딕, 고딕, sans-serif";
-   line-height: 2.5;
-   padding-left: 10px;
-   }
-
-#modal1 > p {
-   color: #363D4E;
-   padding: 30px 70px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-   font-family: "맑은 고딕, 고딕, sans-serif";
-   margin: 0px;
-}
-
-#confirm_button{
-   background-color: #8FC841;
-   border-radius: 5px;
-   width: 100px;
-   margin-left: 80px;
-   margin-bottom: 20px;
-   font-weight: bold;
-   font-family: "맑은 고딕, 고딕, sans-serif";
-   min-height: 40px;
-   color: #fff;
-}
-
-#close_button{
-   background-color: #F66174;
-   border-radius: 5px;
-   width: 100px;
-   margin-left: 20px;
-   margin-bottom: 20px;
-   font-weight: bold;
-   font-family: "맑은 고딕, 고딕, sans-serif";
-   min-height: 40px;
-   color: #fff;
-}      
-
-
 .select2{
 	background: #ffffff;
 	height: 45px;
